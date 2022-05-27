@@ -1,0 +1,74 @@
+simple recommenders- offers simple suggestions based on movie popularity or genre
+
+content based recommenders- use metadata to suggest what you should watch next, eg after 
+watching 2-3 tom cruise movies, automatically suggest more tom cruise(tags, contenet similatiry recomendation)
+
+collaborative filtering based (recomends based on users interest, user similarity then recomendaion)
+
+hybrid 
+
+ 
+{
+to- build movie recommendation system similar to imdb and provide insights
+about top movies
+
+-find metric to rate the movies
+-calculate and sort by metric
+
+
+all different datasets metadata, how will u use them
+
+attributes important in recommendation
+
+cast-plot keywords-language-vote count(for how good movie is)
+
+weighted average will do ( rating*no of voters) but less no of voting w high rating also can be v good 
+but cant represent movie w one rating as 10/10 on top
+}
+
+movies_metadata.csv info like- genere,language
+links.csv imdb ids of movies
+credits.csv cast crew info for all movies
+keywords movie keywords
+
+Project flow
+data-preprocessing-model-connect to website-deploy
+
+ 
+PREPROCESSING for content content based
+
+1- merging the dataset is needed
+
+2-remove useless columns from all datasets(which are useless in generating tags) 
+ [budget doesnt help in generating tags,website,language can remove if high imbalance english
+
+3-removing missing,duplicate, null values(maybe?) coz movie will get removed toh bt
+
+3.Improve the formats in colums (List of dictionary to List)
+
+
+
+Matrix factorization??
+
+--------------
+making hybrid maybe
+
+Mainly three types of recommendation systems in machine learning based on filtering are used to suggest product and services to the consumers.
+1. Content Filtering
+2. Collaborative Filtering
+3. Hybrid Filtering
+
+1. Content Filtering:
+In this algorithm, we try finding items look alike. Once we have item look like matrix,
+
+  we can easily recommend alike items to a customer, who has purchased any item from the store.
+
+2. Collaborative Filtering:
+  Here, we try to search for look alike customers and offer products based on what his/her lookalike has chosen.
+
+  This algorithm is very effective but takes a lot of time and resources..
+
+
+
+take user input and recomend movies based on that, also alike customers ka
+also genre search kiya toh suggest hose genre movies also
